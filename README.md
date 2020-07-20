@@ -50,10 +50,16 @@ Invalid example: `GET /return-all-accounts/{ID}`
 
 ## Versioning
 ## Long running operations
+## Status codes
+## Pagination
+## Hypermedia
 ## Compatibility
+## Deprecation
 
 # 4. Governance
-The `API governance service` will validate the API endpoints for each service. When the service goes through the `build pipeline`, API validation is a build step before being able to deploy to the `stage environment`.
+The `API governance service` will do a rough validation of the API endpoints for each service. When the service goes through the `build pipeline`, API validation is a build step before being able to deploy to the `stage environment`.
+
+Changes to the API also need to go through the `API governance` team for validation.
 
 The `API gateway` will override the requests and provide a `governance` field as part of response:
 ```json
