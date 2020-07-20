@@ -40,8 +40,11 @@ The API must follow these requirements:
 ## Resources
 A fundamental concept in a REST API is resources.
 - Avoid verbs
+
 Valid example: `GET /accounts/{ID}`
+
 Invalid example: `GET /return-all-accounts/{ID}`
+
 - Use sub-paths
 - ...
 
@@ -56,7 +59,7 @@ The `API gateway` will override the requests and provide a `governance` field as
 ```json
 {
   "governance": "approved",
-  "...": ...
+  "...": "..."
 }
 ```
 # 5. Support
